@@ -37,6 +37,41 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
+.button{
+    background-color: #E3B873;
+    box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    padding: 13px 33px;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 27px;
+    line-height: 37px;
+    color: #E3B873;
+    text-transform: uppercase;
+}
+
+.conteiner {
+    max-width: 1256px;
+    margin: 0 87px 0 86px;
+}
+
+.subtitle {
+    font-family: 'Yeseva One', cursive;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+
+}
+
 .bigred{
 	font-size: 20px;
 	color: red;
@@ -53,12 +88,6 @@ body {
     background-color: black;
 }
 
-.conteiner {
-    max-width: 1256px;
-    margin: 0 87px 0 86px;
-    padding-left: 40px;
-}
-
 .header__content {
     display: flex;
     justify-content: space-between;
@@ -73,7 +102,7 @@ body {
 
 .telephone {
     color: #E3B873;
-    text-decoration: underline;
+    border-bottom: 1px solid #E3B873;
 }
 
 .menu__items {
@@ -89,19 +118,6 @@ body {
     color: white;
 }
 
-.button{
-    background-color: #E3B873;
-    box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.2);
-    border-radius: 2px;
-    outline: 0;
-    border: 0;
-    padding: 13px 33px;
-    color: white;
-    text-transform: uppercase;
-    font-style: italic;
-    font-size: 11px;
-    line-height: 15px;
-}
 .button--outline {
     background-color: transparent;
     border: 1px solid white;
@@ -119,13 +135,13 @@ body {
 }
 
 .welcome .button {
-    min-width: 207px;
+    min-width: 200px;
 }
 
 .welcome__wrapper {
     padding-top: 156px;
 }
-.title {
+.header__title {
     font-family: 'Yeseva One', cursive;
     text-transform: uppercase;
     font-size: 40px;
@@ -133,7 +149,7 @@ body {
     color: white;
 }
 
-.title--secretion {
+.header__title--secretion {
     color: #E3B873;
     font-family: 'Yeseva One', cursive;
     text-transform: uppercase;
@@ -147,4 +163,125 @@ body {
     line-height: 36px;
     color: white;
     margin: 20px 0 40px;
+}
+
+.portfolio {
+    background-color: black;
+    padding-bottom: 400px;
+}
+
+.portfolio__conteiner {
+    padding-top: 100px;
+}
+
+.design_items {
+    display: flex;
+    justify-content: space-between;
+    width: 679px;
+    margin-left: auto;
+}
+
+.design_items li:not(:last-child) {
+    margin-right: 60px;
+}
+
+.design_item {
+    font-family: 'Yeseva One', cursive;
+    font-size: 14px;
+    line-height: 19px;
+    color: white;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.design_item--active {
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+}
+
+.portfolio__wrapper {
+   display: flex;
+}
+
+.portfolio__design {
+    width: 679px;
+    height: 482px;
+    margin-top: 45px;
+}
+
+.portfolio__content {
+ padding: 28px 8px;
+ margin-right: 50px;
+}
+
+.portfolio__text {
+    font-size: 14px;
+    line-height: 27px;
+    color: #fff;
+    margin-top: 34px;
+}
+
+.portfolio__details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: px;
+    grid-row-gap: 0px;
+}
+
+.portfolio__detail h3 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 18px;
+    line-height: 25px;
+    color: #E3B873;
+    text-transform: uppercase;
+    margin-top: 42px;
+}
+
+.portfolio__detail span {
+    font-size: 13px;
+    line-height: 21px;
+    color: #fff;
+    margin-top: 9px;
+}
+
+.portfolio__navigation {
+    display: flex;
+    margin-top: 80px;
+}
+
+.portfolio__arrow {
+    max-width: 41px;
+    max-height: 13px;
+}
+.arrow--left {
+    margin-right: 30px;
+}
+
+.arrow--right {
+    margin-left: 13px;  
+}
+
+.portfolio__dot {
+    max-width: 9px;
+    max-height: 9px;
+    margin-right: 17px;
+}
+
+.gallery__conteiner {
+    text-align: center;
+}
+
+.gallery__subtitle {
+    color: #fff;
+}
+
+.gallery__vector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery__conteiner {
+    margin-top: -307px;
 }

@@ -36,13 +36,6 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
-.checkbox__personal {margin-top: 16px;}
-
-.checkbox__personal label {
-    color: black;
-    font-size: 14px;
-    line-height: 23px;
-}
 
 .checkbox__label {
     cursor: pointer;
@@ -81,7 +74,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 .checkbox__input:checked + .tick::before{
-opacity: 1;
+    opacity: 1;
 }
 
 .button{
@@ -107,9 +100,10 @@ opacity: 1;
     text-transform: uppercase;
 }    
 
-.conteiner {
-    max-width: 1256px;
-    margin: 0 87px 0 87px;
+.container {
+    max-width: 1440px;
+    min-width: 768px;
+    margin: 0 auto;
 }    
 
 .subtitle {
@@ -154,16 +148,15 @@ opacity: 1;
 
 .label {
     color: #FFFFFF80;
-    margin-bottom: 7px;
     margin-top: 48px;
     display: block;
 }
 
 .input {
     background: transparent;
-    border-bottom: 1px solid #FFFFFF26;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     width: 100%;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
     color: white;
 }
 
@@ -217,13 +210,13 @@ body {
     padding-left: 0;
     padding-right: 0;
     
- }      
+}      
 
 .welcome {
     background-image: url(/image/Group\ 7.jpg);
     background-size: cover;
     height: 707px;
-}        
+}  
 
 .welcome__wrapper {padding-top: 156px;}
 
@@ -256,7 +249,7 @@ body {
     padding-bottom: 400px;
 }        
 
-.portfolio__conteiner {padding-top: 100px;}
+.portfolio__container {padding-top: 100px;}
 
 .design_items {
     display: flex;
@@ -341,17 +334,7 @@ body {
     margin-right: 17px;
 }
 
-.feedback__label {
-    font-size: 13px;
-    line-height: 21px;
-    color: #36363680;
-    display: block;
-    max-height: 12px;
-}
-
-.feedback__input::placeholder {color: black;} 
-
-.gallery__conteiner {
+.gallery__container {
     text-align: center;
     margin-top: -307px;
 }        
@@ -364,19 +347,41 @@ hr {
     margin: 0 auto;
 }        
 
-
 .feedback__form {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding-top: 91px;
-}        
+}
 
-.feedback__form input {
+
+.feedback__label {
+    font-size: 13px;
+    line-height: 21px;
+    color: #36363680;
+    display: block;
+    text-align: left;
+}
+
+.feedback__input {
     background: transparent;
-    border-bottom: 1px solid #3636364D;
-    margin-right: 50px;
-    margin-top: 7px;
-}        
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    padding-bottom: 8px;
+    width: 231px;
+}
+
+.feedback__input::placeholder {color: black;} 
+
+
+.feedback__checkbox {
+    margin-top: 33px;
+    text-align: center;
+}
+
+.feedback__checkbox label {
+    color: black;
+    font-size: 14px;
+    line-height: 23px;
+}
 
 .repair__subtitle  {
     text-align: center;
@@ -514,7 +519,7 @@ hr {
     background-size: cover;
 }
 
-.design-styles__conteiner {
+.design-styles__container {
     display: flex;
     justify-content: space-between;
 }
@@ -552,7 +557,7 @@ hr {
 .img__example3 {margin-top: -112px;}
 .img__example2 {margin-bottom: -40px;}
 
-.our-clients__conteiner {margin-top: 110px;}
+.our-clients__container {margin-top: 110px;}
 
 .feedback__card {
     display: flex;
@@ -611,11 +616,15 @@ hr {
     background-image: url(/image/background_contacts.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(30, 30, 30, 0.95);
-    padding-bottom: 48px;
 }
 
-.contacts_conteiner {
+.contacts__back{
+    background-color: rgba(0, 0, 0, 0.85);
+    padding-bottom: 65px;
+
+}
+
+.contacts_container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -638,7 +647,6 @@ hr {
 .questions__details {
     display: grid;
     grid-template: 1fr 1fr / 240px 1fr;
-    /* padding-left: 181px; */
     max-width: 520px;
     margin: 0 auto;
     column-gap: 50px;
@@ -692,3 +700,132 @@ hr {
     align-items: center;
     text-transform: uppercase;
 }  
+
+@media (max-width: 1300px) {
+    .hide-sm {
+        display: none;
+    }
+    .title {
+        font-size: 36px;
+    }
+    .container {
+        padding: 0 30px;
+    }
+
+    .menu, .button__header {
+        display: none;
+    }
+
+    .welcome {
+        height: 500px;
+        text-align: center;     
+    }
+    .welcome__wrapper {
+        text-align: left;
+        padding-top: 50px;
+    }
+    .welcome__wrapper .button {
+        width: 100%;
+        margin: 0;
+    }
+    .welcome__wrapper .button:first-of-type {
+        margin-bottom: 15px;
+    }
+
+    .portfolio__wrapper {
+        flex-direction: column;
+    }
+    .portfolio__content {
+        text-align: center;
+        margin-right: 0;
+    }
+    .portfolio__design {
+        height: 300px;
+        margin-top: 100px;
+    }
+    .portfolio__details {
+        text-align: left;
+        width: 100%;
+    }
+    .portfolio__navigation {
+        display: none;
+    }
+
+    .design_items {
+        display: none;
+    }
+
+    .gallery__subtitle {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    .gallery__vector * {
+        transform: scale(1.2);
+    }
+
+    .video {
+        width: 100%;
+    }
+    
+    .description__repair {
+        flex-direction: column;
+    }
+    .description__repair .list {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .description__repair .list img {
+        width: 100%;
+    }
+    .repair__list {
+        margin-left: 0;
+        box-shadow: 4px 4px 8px 0px rgba(227, 184, 115, 0.2);
+        width: 80%;
+    }
+    .repair__list h3 {
+        margin-left: 20px;
+    }
+    .repair__list ul  {
+        margin-left: 30px;
+    }
+
+    .application, .our-clients {
+        display: none;
+    }
+
+    .design-styles__container .design__img {
+        display: none;
+    }
+
+    .design-styles .slider {
+        width: 100%;
+        margin-top: -230px;
+    }
+
+    .questions__form {
+        width: 100%;
+    }
+
+    .contacts {
+        margin-top: -1px;
+    }
+
+    .contacts .questions__form {
+        background: transparent;
+        margin-top: 30px;
+    }
+
+    .contacts .questions__details {
+        display: block;
+    }
+
+    .contacts .map img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .hide-lg {
+        display: none;
+    }
+}

@@ -296,7 +296,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: px;
     grid-row-gap: 0px;
 }        
 
@@ -341,6 +340,17 @@ body {
 }        
 
 .gallery__subtitle {color: #fff;}
+
+.video-container {
+    position: relative;
+}
+
+.video-container .video_player {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
 hr {
     max-width: 55px;

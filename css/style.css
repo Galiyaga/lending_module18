@@ -163,7 +163,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .input::placeholder {color: #FFFFFF;}
 
-
 body {
     margin: 0;
     font-family: 'Nunito Sans', sans-serif;
@@ -252,14 +251,14 @@ body {
 
 .portfolio__container {padding-top: 100px;}
 
-.design_items {
+.design__items {
     display: flex;
     justify-content: space-between;
     width: 679px;
     margin-left: auto;
 }        
 
-.design_item {
+.design__item {
     font-family: 'Yeseva One', cursive;
     font-size: 14px;
     line-height: 19px;
@@ -345,7 +344,7 @@ body {
     position: relative;
 }
 
-.video-container .video_player {
+.video-container .video-player {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -358,14 +357,14 @@ hr {
     margin: 0 auto;
 }        
 
-.feedback__form {
+.feedback-form {
     display: flex;
     justify-content: space-evenly;
     padding-top: 91px;
 }
 
 
-.feedback__label {
+.feedback-form__label {
     font-size: 13px;
     line-height: 21px;
     color: #36363680;
@@ -373,7 +372,7 @@ hr {
     text-align: left;
 }
 
-.feedback__input {
+.feedback-form__input {
     background: transparent;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
     padding-bottom: 8px;
@@ -381,15 +380,15 @@ hr {
     width: 231px;
 }
 
-.feedback__input::placeholder {color: black;} 
+.feedback-form__input::placeholder {color: black;} 
 
 
-.feedback__checkbox {
+.feedback-form__checkbox {
     margin-top: 33px;
     text-align: center;
 }
 
-.feedback__checkbox label {
+.feedback-form__checkbox label {
     color: black;
     font-size: 14px;
     line-height: 23px;
@@ -489,20 +488,20 @@ hr {
     margin-left: -5px;
 }    
 
-.application__form {
+.application-form {
     width: 506px;
     height: 509px;
     margin-top: 35px;
     padding: 28px 49px;
 }    
 
-.application__form h3 {
+.application-form h3 {
     margin-bottom: -8px;
 }    
 
-.application__checkbox {margin-top: 20px;}
+.application-form__checkbox {margin-top: 20px;}
 
-.call__button {
+.application-form__button {
     margin-top: 40px;
     margin-left: 205px;
     padding: 18px 22px;
@@ -653,27 +652,27 @@ hr {
 
 }
 
-.contacts_container {
+.contacts__container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.questions__form {
+.questions-form {
     width: 883px;
     height: 445px;
     margin-top: -222px;
     text-align: center;
 }
 
-.questions__form h3 {
+.questions-form h3 {
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
     padding-top: 34px;
     
 }
 
-.questions__details {
+.questions-form__details {
     display: grid;
     grid-template: 1fr 1fr / 240px 1fr;
     max-width: 520px;
@@ -682,11 +681,11 @@ hr {
     
 }
 
-.questions__details div {
+.questions-form__details div {
     text-align: left;
 }
 
-.questions__checkbox {
+.questions-form__checkbox {
     max-width: 520px;
     margin: 0 auto;
     padding-top: 55px;
@@ -694,12 +693,12 @@ hr {
     justify-content: center;
 }
 
-.questions__checkbox label {
+.questions-form__checkbox label {
     display: flex;
     align-items: center;
 }
 
-.questions__button {
+.questions-form__button {
     margin-top: 50px;
 }
 
@@ -807,22 +806,22 @@ hr {
         color: rgba(255, 255, 255, 1);
     }
     
-    .feedback__checkbox {
+    .feedback-form__checkbox {
         margin: 0;
     }
 
-    .feedback__form, .feedback__input::placeholder, .feedback__checkbox {
+    .feedback-form, .feedback-form__input::placeholder, .feedback-form__checkbox {
         flex-direction: column;
         text-align: left;
         color: rgba(255, 255, 255, 1);
     }
     
-    .feedback__label {
+    .feedback-form__label {
         color: #FFFFFF80;
         font-size: 18px;
     }
     
-    .feedback__input {
+    .feedback-form__input {
         margin-bottom: 50px;
         width: 100%;
         text-align: left;
@@ -830,12 +829,12 @@ hr {
         font-size: 18px;
     }
 
-    .feedback__checkbox span {
+    .feedback-form__checkbox span {
         color: rgba(255, 255, 255, 1); 
         font-size: 18px;      
     }
 
-    .feedback__button {
+    .feedback-form__button {
         margin-bottom: -60px;
         margin-top: 0;
     }
@@ -871,7 +870,7 @@ hr {
         margin-left: 30px;
     }
 
-    .application, .our-clients {
+    .application-form, .our-clients {
         display: none;
     }
 
@@ -904,11 +903,7 @@ hr {
         margin-top: 20px;
     }
 
-    .questions__form {
-        width: 100%;
-    }
-
-    .questions__form h3 {
+    .questions-form h3 {
         font-size: 36px;
     }
 
@@ -916,27 +911,28 @@ hr {
         margin-top: -1px;
     }
 
-    .questions__form {
+    .questions-form {
         background: transparent;
         margin-top: 30px;
+        width: 100%;
     }
 
-    .questions__details {
+    .questions-form__details {
         display: block;
         margin: 0;
         max-width: none;
     }
-    .questions__details, .input {
+    .questions-form__details, .input {
         font-size: 18px;
     }
 
-    .questions__checkbox {
+    .questions-form__checkbox {
         margin: 0;
         justify-content: start;
         padding-top: 20px;
     }
     
-    .questions__checkbox span {
+    .questions-form__checkbox span {
         font-size: 18px;
     }
 
